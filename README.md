@@ -1,23 +1,37 @@
-# 🎓 Thesis AI Agent
+# DIPLOMOVKA – 🎓 Thesis AI Agent
 
-Vlastný AI agent pre pomoc s písaním dizertačnej práce - komplexný nástroj na podporu akademického písania, výskumu a citovania.
+Vlastný AI agent pre pomoc s písaním diplomovej práce – komplexný nástroj na podporu akademického písania, výskumu a citovania.
+
+## 🏆 **HLAVNÉ VÝSLEDKY PROJEKTU**
+
+### ✅ **Kompletná kapitola o hydraulickom vyregulovaní**
+- **2,730 slov** na PhD akademickej úrovni
+- **16 detailne popísaných obrázkov** s technickými špecifikáciami  
+- **2 analytické tabuľky** (systémy, ekonomika)
+- **20 vedeckých citácií** v STN ISO 690 formáte
+- **8 hlavných sekcií + 18 podsekcií**
+
+### 📁 **Kľúčové súbory:**
+- `KOMPLETNA_KAPITOLA_2_HYDRAULICKE_VYREGULOVANIE.md` - finálna kapitola
+- `OBRAZKY_NAVOD_A_POPIS.md` - návod na vytvorenie všetkých obrázkov
+- Všetky pomocné scripty a čiastkové verzie
 
 ## 📋 Obsah
 
-- [Funkcie](#funkcie)
-- [Inštalácia](#inštalácia)
-- [Konfigurácia](#konfigurácia)
-- [Použitie](#použitie)
-- [Príklady](#príklady)
-- [Štruktúra projektu](#štruktúra-projektu)
-- [Prispievanie](#prispievanie)
+- [Funkcie](#-funkcie)
+- [Inštalácia](#-inštalácia)
+- [Konfigurácia](#️-konfigurácia)
+- [Použitie](#-použitie)
+- [Príklady](#-príklady)
+- [Štruktúra projektu](#-štruktúra-projektu)
+- [Prispievanie](#-prispievanie)
 
 ## ✨ Funkcie
 
 ### 🔍 Výskumný asistent
 - Generovanie výskumných návrhov a outline
 - Vyhľadávanie relevantných zdrojov a literatúry
-- Analýza medzier v poznávaní
+- Analýza medzier v poznaní
 - Návrhy výskumných otázok
 
 ### ✍️ Asistent písania
@@ -46,29 +60,29 @@ Vlastný AI agent pre pomoc s písaním dizertačnej práce - komplexný nástro
 
 ### Kroky inštalácie
 
-1. **Klonujte repozitár:**
+1. Klonujte repozitár:
    ```bash
-   git clone <repository-url>
-   cd thesis-ai-agent
+   git clone https://github.com/labovskyviktor-design/DIPLOMOVKA.git
+   cd DIPLOMOVKA
    ```
 
-2. **Vytvorte virtuálne prostredie:**
+2. Vytvorte virtuálne prostredie:
    ```bash
    python -m venv venv
    
    # Windows
-   venv\\Scripts\\activate
+   venv\Scripts\activate
    
    # Linux/Mac
    source venv/bin/activate
    ```
 
-3. **Nainštalujte závislosti:**
+3. Nainštalujte závislosti:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Nastavte API kľúče:**
+4. Nastavte API kľúče:
    ```bash
    # Pre OpenAI
    set OPENAI_API_KEY=your_api_key_here
@@ -81,12 +95,12 @@ Vlastný AI agent pre pomoc s písaním dizertačnej práce - komplexný nástro
 
 Nastavenia sa nachádzajú v `config/config.yaml`. Môžete upraviť:
 
-- **LLM nastavenia**: poskytovateľ, model, teplota
-- **Výskumné parametre**: počet zdrojov, hĺbka vyhľadávania  
-- **Štýl písania**: akademický štýl, formát citácií
-- **Výstupné formáty**: markdown, docx, pdf
+- LLM nastavenia: poskytovateľ, model, teplota
+- Výskumné parametre: počet zdrojov, hĺbka vyhľadávania  
+- Štýl písania: akademický štýl, formát citácií
+- Výstupné formáty: markdown, docx, pdf
 
-### Príklad konfigurácie:
+Príklad konfigurácie:
 ```yaml
 llm:
   provider: "openai"
@@ -101,44 +115,44 @@ writing:
 
 ## 📖 Použitie
 
-### Interaktívny režim
+Interaktívny režim:
 ```bash
 python main.py --mode interactive
 ```
 
-### Webové rozhranie  
+Webové rozhranie:
 ```bash
 python main.py --mode web
 ```
 
-### Dávkové spracovanie
+Dávkové spracovanie:
 ```bash
 python main.py --mode batch --input-file commands.txt
 ```
 
 ## 💡 Príklady
 
-### Výskumné príkazy
+Výskumné príkazy:
 ```
 research umelá inteligencia v zdravotníctve
 research outline strojové učenie
 ```
 
-### Písanie
-```  
+Písanie:
+```
 write introduction kvantové počítačstvo
 edit "Môj text na zlepšenie..."
 improve abstract section
 ```
 
-### Citácie
+Citácie:
 ```
 cite Smith, J. (2023). AI in Healthcare
 bibliography
 format APA
 ```
 
-### Dokumenty
+Dokumenty:
 ```
 analyze document.pdf  
 summarize research_paper.docx
@@ -171,45 +185,45 @@ thesis-ai-agent/
 
 ## 🎯 Dostupné príkazy
 
-### Všeobecné
+Všeobecné
 - `help` - Zobrazí nápovedu
 - `quit` - Ukončí program
 
-### Výskum  
+Výskum
 - `research [téma]` - Výskum témy
 - `research outline [téma]` - Vytvorí outline
 
-### Písanie
+Písanie
 - `write introduction [téma]` - Napíše úvod
 - `write conclusion [téma]` - Napíše záver  
 - `edit [text]` - Zlepší text
 - `draft [téma]` - Vytvorí náčrt
 
-### Citácie
+Citácie
 - `cite [zdroj]` - Vytvorí citáciu
 - `bibliography` - Zobrazí bibliografiu
 - `format [štýl]` - Zobrazí formáty
 
-### Dokumenty
+Dokumenty
 - `analyze [súbor]` - Analyzuje dokument
 - `summarize [súbor]` - Zhrnie dokument  
 - `process [súbor]` - Spracuje súbor
 
 ## 🔧 Vývoj
 
-### Spustenie testov
+Spustenie testov:
 ```bash
 pytest tests/
 ```
 
-### Formátovanie kódu
+Formátovanie kódu:
 ```bash
 black src/
 flake8 src/
 ```
 
-### Pridanie nových funkcií
-1. Vytvorte novú vetvú
+Pridanie nových funkcií:
+1. Vytvorte novú vetvu
 2. Implementujte funkciu v príslušnom module
 3. Pridajte testy
 4. Vytvorte pull request
@@ -237,13 +251,15 @@ Ak máte problémy alebo otázky:
 
 ## 🚀 Roadmapa
 
+- [x] ✅ **Kompletná kapitola o hydraulickom vyregulovaní** (HOTOVO!)
+- [x] ✅ **16 detailne popísaných obrázkov** (HOTOVO!)
+- [x] ✅ **Profesionálne citácie STN ISO 690** (HOTOVO!)
 - [ ] Integrácia s Google Scholar API
 - [ ] Pokročilé analytické nástroje  
-- [ ] Podpora viacerých jazykov
 - [ ] Plugin pre Word/LaTeX
-- [ ] Grafické používateľské rozhraný
-- [ ] Kolaboratívne funkcie
+- [ ] Grafické používateľské rozhraie
 
 ---
 
 **Vytvorené s ❤️ pre akademickú komunitu**
+**Špecializované na technické a inžinierske diplomové práce**
