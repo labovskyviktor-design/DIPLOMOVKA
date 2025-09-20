@@ -42,7 +42,7 @@ class ThesisAIAgent:
         # Initialize components
         self.llm = LLMInterface(config.get('llm', {}))
         self.doc_processor = DocumentProcessor()
-        self.research_assistant = ResearchAssistant(self.llm)
+        self.research_assistant = ResearchAssistant(self.llm, config.get('research', {}))
         self.writing_assistant = WritingAssistant(self.llm)
         self.citation_manager = CitationManager()
         
@@ -163,11 +163,13 @@ class ThesisAIAgent:
     
     def _show_help(self):
         """Display help information for available commands."""
-        help_text = \"\"\"
+        help_text = """
 📖 Available Commands:
 
 Research Commands:
   • research [topic] - Find relevant papers and sources
+  • search [topic] / hľadaj [téma] - Search academic databases
+  • translate [text] / preloži [text] - Translate academic texts
   • research outline [topic] - Generate research outline
   
 Writing Commands:
@@ -189,5 +191,5 @@ Document Commands:
 General:
   • help - Show this help message
   • quit - Exit the application
-        \"\"\"
+        """
         print(help_text)

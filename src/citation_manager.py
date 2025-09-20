@@ -36,25 +36,51 @@ class CitationManager:
         else:
             return "Dostupné príkazy: cite [zdroj], bibliography, format [štýl]"
     
-    def create_citation(self, source_info: str, style: str = "APA") -> str:
+    def create_citation(self, source_info: str, style: str = "STN") -> str:
         """
         Vytvorí citáciu v požadovanom formáte.
         
         Args:
             source_info: Informácie o zdroji
-            style: Štýl citácie (APA, MLA, Chicago)
+            style: Štýl citácie (STN, APA, MLA, Chicago)
             
         Returns:
             Formátovaná citácia
         """
-        if style.upper() == "APA":
+        if style.upper() in ["STN", "ISO", "STN_ISO"]:
+            return self._format_stn_iso_citation(source_info)
+        elif style.upper() == "APA":
             return self._format_apa_citation(source_info)
         elif style.upper() == "MLA":
             return self._format_mla_citation(source_info)
         elif style.upper() == "CHICAGO":
             return self._format_chicago_citation(source_info)
         else:
-            return f"Nepodporovaný štýl citácie: {style}. Podporované: APA, MLA, Chicago"
+            return f"Nepodporovaný štýl citácie: {style}. Podporované: STN/ISO, APA, MLA, Chicago"
+    
+    def _format_stn_iso_citation(self, source_info: str) -> str:
+        """Formátuje citáciu v STN ISO 690 štýle."""
+        return f"""
+STN ISO 690 Citácia:
+Pre korektné vytvorenie STN ISO 690 citácie potrebujem:
+
+Knihy/monografie:
+- PRIEZVISKO, M. Názov publikácie. Miesto vydania : Vydavateľ, rok. ISBN.
+- Príklad: OBERT, V. Návraty a odkazy. Nitra : Univerzita Konštantína Filozofa, 2006. 129 s. ISBN 80-8094-046-0.
+
+Článok v časopise:
+- PRIEZVISKO, M. Názov článku. Názov časopisu. Rok, roč. x, č. y, s. z-w. ISSN.
+- Príklad: STEINEROVÁ, J. Princípy formovania vzdelania v informačnej vede. In Pedagogická revue. ISSN 1335-1982, 2000, roč. 2, č. 3, s. 8-16.
+
+Elektronické dokumenty:
+- PRIEZVISKO, M. Názov. [online]. Miesto : Vydavateľ, rok. [cit. YYYY-MM-DD]. Dostupné na internete: <URL>. ISBN.
+
+V texte sa cituje číslom v hranatých zátvorkách [1], [2], atď.
+
+Poskytnuté informácie: {source_info}
+
+Prosím doplňte chýbajúce údaje pre presnejšiu citáciu.
+        """
     
     def _format_apa_citation(self, source_info: str) -> str:
         """Formátuje citáciu v APA štýle."""
@@ -152,6 +178,11 @@ Príklady:
         """Zobrazí dostupné formáty citácií s príkladmi."""
         return """
 📖 FORMÁTY CITÁCIÍ
+
+🔹 STN ISO 690 (Slovenská technická norma - predvolený)
+   Kniha: OBERT, V. Návraty a odkazy. Nitra : Univerzita Konštantína Filozofa, 2006. 129 s. ISBN 80-8094-046-0.
+   Článok: STEINEROVÁ, J. Princípy formovania vzdelania v informačnej vede. In Pedagogická revue. ISSN 1335-1982, 2000, roč. 2, č. 3, s. 8-16.
+   Citovanie v texte: [1], [2], atď.
 
 🔹 APA (American Psychological Association)
    Kniha: Smith, J. A. (2023). Názov knihy. Vydavateľstvo.

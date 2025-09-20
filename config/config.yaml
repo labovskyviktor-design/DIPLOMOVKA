@@ -15,15 +15,26 @@ research:
   search_depth: "moderate"  # Options: "shallow", "moderate", "deep"
   preferred_sources:
     - "Google Scholar"
-    - "PubMed"
+    - "Semantic Scholar"
     - "ArXiv"
+    - "PubMed"
     - "JSTOR"
+  # API keys for search services (set as environment variables)
+  # GOOGLE_API_KEY, SERPAPI_KEY, etc.
+  enable_translation: true
+  translation_cache_size: 1000
+  # Špecializované databázy pre vykurovanie budov
+  heating_databases:
+    - "Energy and Buildings Journal"
+    - "Applied Energy"
+    - "Building and Environment"
+    - "IEEE Transactions on Smart Grid"
 
 # Writing Assistant Settings
 writing:
   style: "academic"  # Options: "academic", "casual", "formal"
-  citation_format: "APA"  # Options: "APA", "MLA", "Chicago", "Harvard"
-  language: "en"
+  citation_format: "STN"  # Options: "STN", "APA", "MLA", "Chicago", "Harvard"
+  language: "sk"
   spell_check: true
   grammar_check: true
 

@@ -22,6 +22,17 @@ pydantic>=2.0.0
 python-dotenv>=1.0.0
 pyyaml>=6.0.0
 
+# Academic search and translation
+requests>=2.31.0
+scholarly>=1.7.0  # Google Scholar scraping
+feedparser>=6.0.10  # ArXiv RSS parsing
+translate>=3.6.1  # Translation services
+googletrans>=4.0.0  # Google Translate
+
+# Optional for enhanced functionality
+# serpapi>=1.0.0  # SerpAPI for Google Scholar
+# deepl>=1.15.0  # DeepL translation service
+
 # Development tools
 pytest>=7.4.0
 black>=23.0.0
