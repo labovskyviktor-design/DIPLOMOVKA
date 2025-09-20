@@ -1,0 +1,57 @@
+# Thesis AI Agent Configuration
+
+# Large Language Model Configuration
+llm:
+  provider: "openai"  # Options: "openai", "anthropic"
+  model: "gpt-4"
+  temperature: 0.7
+  max_tokens: 2000
+  # API keys should be set as environment variables:
+  # OPENAI_API_KEY or ANTHROPIC_API_KEY
+
+# Research Assistant Settings
+research:
+  max_sources: 10
+  search_depth: "moderate"  # Options: "shallow", "moderate", "deep"
+  preferred_sources:
+    - "Google Scholar"
+    - "PubMed"
+    - "ArXiv"
+    - "JSTOR"
+
+# Writing Assistant Settings
+writing:
+  style: "academic"  # Options: "academic", "casual", "formal"
+  citation_format: "APA"  # Options: "APA", "MLA", "Chicago", "Harvard"
+  language: "en"
+  spell_check: true
+  grammar_check: true
+
+# Document Processing Settings
+documents:
+  supported_formats:
+    - "pdf"
+    - "docx"
+    - "txt"
+    - "md"
+  max_file_size_mb: 50
+  extract_citations: true
+
+# Output Settings
+output:
+  format: "markdown"  # Options: "markdown", "docx", "pdf", "html"
+  save_history: true
+  backup_frequency: "daily"  # Options: "never", "daily", "weekly"
+  
+# Web Interface Settings
+web:
+  host: "localhost"
+  port: 8501
+  theme: "light"  # Options: "light", "dark"
+
+# Logging Settings
+logging:
+  level: "INFO"  # Options: "DEBUG", "INFO", "WARNING", "ERROR"
+  file: "thesis_agent.log"
+  max_size_mb: 10
+  backup_count: 5
