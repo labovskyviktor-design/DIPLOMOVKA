@@ -1,0 +1,82 @@
+{
+  "building": {
+    "name": "Administratívna budova Bratislava",
+    "floor_area_m2": 1500,
+    "total_cooling_load_kW": 189.67454694765829,
+    "specific_load_W_m2": 126.44969796510553
+  },
+  "cooling_loads": {
+    "people_W": 6900,
+    "lighting_W": 14250.0,
+    "equipment_W": 12600.0,
+    "solar_W": 142800.0,
+    "transmission_W": 6822.1469476583,
+    "ventilation_W": 6302.4,
+    "total_sensible_W": 185520.1469476583,
+    "total_latent_W": 4154.4,
+    "total_cooling_W": 189674.5469476583,
+    "specific_cooling_W_m2": 126.44969796510553
+  },
+  "systems_comparison": [
+    {
+      "Systém": "Split systém (Multi)",
+      "Typ": "split",
+      "Chladiaci výkon [kW]": 80,
+      "COP [-]": 3.2,
+      "Investične náklady [€]": 15000,
+      "Ročné náklady [€/rok]": 8638.59,
+      "Ročná spotreba [kWh]": 43547.73,
+      "LCC 20 rokov [€]": 132401.27,
+      "Payback [roky]": 1.74,
+      "NPV [€]": -132401.27
+    },
+    {
+      "Systém": "VRF systém",
+      "Typ": "VRF",
+      "Chladiaci výkon [kW]": 80,
+      "COP [-]": 3.6,
+      "Investične náklady [€]": 35000,
+      "Ročné náklady [€/rok]": 8167.64,
+      "Ročná spotreba [kWh]": 38709.09,
+      "LCC 20 rokov [€]": 146000.84,
+      "Payback [roky]": 4.29,
+      "NPV [€]": -146000.84
+    },
+    {
+      "Systém": "Chiller + FCU",
+      "Typ": "chiller",
+      "Chladiaci výkon [kW]": 80,
+      "COP [-]": 4.0,
+      "Investične náklady [€]": 45000,
+      "Ročné náklady [€/rok]": 8270.87,
+      "Ročná spotreba [kWh]": 34838.18,
+      "LCC 20 rokov [€]": 157403.86,
+      "Payback [roky]": 5.44,
+      "NPV [€]": -157403.86
+    },
+    {
+      "Systém": "Evaporačný chladič",
+      "Typ": "evaporačný",
+      "Chladiaci výkon [kW]": 80,
+      "COP [-]": 6.7,
+      "Investične náklady [€]": 25000,
+      "Ročné náklady [€/rok]": 5243.8,
+      "Ročná spotreba [kWh]": 20798.91,
+      "LCC 20 rokov [€]": 96265.02,
+      "Payback [roky]": 4.77,
+      "NPV [€]": -96265.02
+    },
+    {
+      "Systém": "Absorpčný chladič",
+      "Typ": "absorpčný",
+      "Chladiaci výkon [kW]": 80,
+      "COP [-]": 5.3,
+      "Investične náklady [€]": 60000,
+      "Ročné náklady [€/rok]": 7232.73,
+      "Ročná spotreba [kWh]": 26292.97,
+      "LCC 20 rokov [€]": 158295.22,
+      "Payback [roky]": 8.3,
+      "NPV [€]": -158295.22
+    }
+  ]
+}

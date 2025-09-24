@@ -1,0 +1,136 @@
+{
+  "topic": "Energetický audit a hydraulické vyregulovanie",
+  "field": "Technické/Inžinierske vedy",
+  "field_code": "technical",
+  "generated_at": "2025-09-22T19:35:51.336910",
+  "estimated_pages": 65,
+  "estimated_sources": {
+    "total_minimum": 60,
+    "total_recommended": 75,
+    "slovak_sources": "45-50%",
+    "international_sources": "50-55%",
+    "books": "20-30%",
+    "journal_articles": "50-60%",
+    "conference_papers": "10-15%",
+    "online_sources": "5-10%"
+  },
+  "sections": [
+    {
+      "id": "1",
+      "title": "Úvod a vymedzenie problematiky energetického auditu",
+      "subsections": [
+        "Definícia energetického auditu a hydraulického vyregulovania",
+        "Legislatívny rámec a normy v SR a EÚ",
+        "Aktuálnosť a význam energetických auditov",
+        "Ciele a hypotézy výskumu"
+      ],
+      "estimated_pages": 8,
+      "key_elements": [
+        "Jasné definície základných pojmov",
+        "Prejavy z legislatívy SR (zákon o energetickej efektívnosti)",
+        "Európske smernice o energetickej efektívnosti budov",
+        "Štatistiky energetických úspor v SR"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Teoretické základy energetickej efektívnosti",
+      "subsections": [
+        "Termodynamické základy tepelných strát",
+        "Hydraulické princípy distribúcie tepla",
+        "Metodológia energetického auditu",
+        "Meranie a monitorovanie energetických parametrov"
+      ],
+      "estimated_pages": 10,
+      "key_elements": [
+        "Základné rovnice tepelných strát",
+        "Hydraulické výpočty prietokov a tlakov",
+        "Metodiky EN 16247 pre energetické audity",
+        "Meracie prístroje a ich presnosť"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Energetický audit budovy - praktická realizácia",
+      "subsections": [
+        "Prípravná fáza auditu a zber podkladov",
+        "Obhliadka budovy a zisťovanie skutočného stavu",
+        "Meranie spotreby energií a parametrov prostredia",
+        "Identifikácia energetických nedostatkov"
+      ],
+      "estimated_pages": 12,
+      "key_elements": [
+        "Checklist pre energetický audit",
+        "Termografické snímkovanie obálky budovy",
+        "Meranie účinnosti vykurovacieho systému",
+        "Analýza spotrebných charakteristík"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Návrh opatrení na zvýšenie energetickej efektívnosti",
+      "subsections": [
+        "Hydraulické vyregulovanie vykurovacích systémov",
+        "Optimalizácia prevádzky tepelných zdrojov",
+        "Izolačné opatrenia na obálke budovy",
+        "Modernizácia rozvodov tepla a regulácie",
+        "Implementácia obnoviteľných zdrojov energie",
+        "Automatizácia a inteligentné riadenie systémov"
+      ],
+      "estimated_pages": 18,
+      "key_elements": [
+        "Postup hydraulického vyregulovania krok za krokom",
+        "Výpočet regulačných ventilov a ich nastavenie",
+        "Vyváženie prietokov v jednotlivých okruhoch",
+        "ROI analýza jednotlivých opatrení",
+        "Kombinácia opatrení pre maximálnu efektívnosť",
+        "Implementačný plán a harmonogram"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Case study - komplexný energetický audit",
+      "subsections": [
+        "Charakteristika riešeného objektu",
+        "Realizácia energetického auditu",
+        "Návrh komplexného riešenia s hydraulickým vyregulovaním",
+        "Ekonomické vyhodnotenie a návratnosť investície",
+        "Implementácia opatrení a monitoring úspor"
+      ],
+      "estimated_pages": 12,
+      "key_elements": [
+        "Reálny projekt s konkrétnymi údajmi",
+        "Merania pred a po implementácii opatrení",
+        "Detailný rozpočet investičných nákladov",
+        "Overenie dosiahnutých úspor v praxi"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Záver a odporúčania",
+      "subsections": [
+        "Zhrnutie kľúčových poznatkov",
+        "Overenie hypotéz a dosiahnutie cieľov",
+        "Odporúčania pre prax energetických auditov",
+        "Budúce trendy v oblasti energetickej efektívnosti"
+      ],
+      "estimated_pages": 5,
+      "key_elements": [
+        "Kvantitatívne zhodnotenie prínosov práce",
+        "Metodické odporúčania pre audítorov",
+        "Identifikácia oblastí pre ďalší výskum",
+        "Perspektívy digitalizácie energetických auditov"
+      ]
+    }
+  ],
+  "recommendations": {
+    "research_approach": "Kombinovať teoretickú analýzu s praktickou realizáciou",
+    "sources": "Vyvážiť slovenské normy a prax s medzinárodnými štandardmi (50:50)",
+    "methodology": "Použiť reálny case study pre overenie teoretických poznatkov",
+    "validation": "Validovať výsledky meraním pred a po implementácii opatrení",
+    "prototyping": "Vytvoriť kompletnú metodiku hydraulického vyregulovania",
+    "standards": "Referencovať STN EN 15316, STN EN 16247 a ďalšie relevantné normy",
+    "performance": "Definovať KPI pre hodnotenie úspešnosti energetických opatrení",
+    "case_study": "Použiť reálny objekt pre praktické overenie návrhov"
+  }
+}
